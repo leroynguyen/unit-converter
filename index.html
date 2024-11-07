@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=VT323&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header id="top-section">
+        <h1>Metric/Imperial Unit Conversion</h1>
+        <input id="input" type="text" placeholder="0" />
+        <button id="convert-btn">Convert</button>
+        <button id="theme-toggle-btn" aria-label="Toggle Theme">🌙</button>
+      </header>
+      <main id="bottom-section">
+        <section class="conversion-results">
+          <h3>Length (Meter/Feet)</h3>
+          <p id="length-el">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+        </section>
+        <section class="conversion-results">
+          <h3>Volume (Liter/Gallons)</h3>
+          <p id="volume-el">
+            0 liters = 0.000 gallons | 0 gallons = 0.000 liters
+          </p>
+        </section>
+        <section class="conversion-results">
+          <h3>Mass (Kilograms/Pounds)</h3>
+          <p id="mass-el">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+        </section>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
