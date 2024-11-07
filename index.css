@@ -103,6 +103,11 @@ p {
   color: #3d3d3d;
   border-radius: 5px;
   border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#convert-btn:hover {
+  background-color: #e0e0e0; /* Slightly darker background color */
 }
 
 .conversion-results {
