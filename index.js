@@ -14,6 +14,25 @@ const feetToMeter = 0.3048
 const gallonToLiter = 3.78541
 const poundToKilo = 0.453592
 
+// Function to validate input and update UI
+function validateInput() {
+  const baseValue = parseFloat(inputEl.value)
+  if (isNaN(baseValue)) {
+    convertBtn.disabled = true
+    lengthEl.textContent = "Please enter a valid number."
+    volumeEl.textContent = "Please enter a valid number."
+    massEl.textContent = "Please enter a valid number."
+  } else {
+    convertBtn.disabled = false
+  }
+}
+
+// Validate input on page load
+validateInput()
+
+// Add an event listener to the input element for validation
+inputEl.addEventListener("input", validateInput)
+
 // Event listener for conversion button
 convertBtn.addEventListener("click", function () {
   let baseValue = parseFloat(inputEl.value) // Parse input value as a float
